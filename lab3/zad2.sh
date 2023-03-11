@@ -25,6 +25,3 @@
 cd dane/pierwiastki
 
 find . -type l | wc -l
-
-# -type l -> typ symlink
-# wc -l -> word count
