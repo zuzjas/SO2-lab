@@ -22,6 +22,17 @@
 # tylko i wyłącznie samą liczbę.
 #
 
-cd dane/pierwiastki
+cd dane/pierwiastki/
 
-find . -type l | wc -l
+sum=0
+
+for file in *; do
+    if test -L "$file"; then    # -L <file_a>: File_a exists and it’s a symbolic link.
+        ((sum="$sum"+1))
+    fi 
+done 
+
+echo "$sum"
+
+
+# find . -type l | wc -l
