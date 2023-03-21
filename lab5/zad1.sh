@@ -22,4 +22,7 @@
 # ilu jest użytkowników w tym systemie. Jako wynik zwrócić samą liczbę!
 #
 
-wc -l dodatkowe/etc-passwd | cut -d "d" -f 1
+wc -l dodatkowe/etc-passwd | cut -d " " -f 1
+
+# -d -> delimeter
+# -f -> field number
