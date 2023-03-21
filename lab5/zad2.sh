@@ -24,3 +24,5 @@
 #
 
 grep -v "/bin/false\|/bin/nologin" dodatkowe/etc-passwd | cut -d ":" -f 1
+
+# -v -> matches only those lines that do not contain the given word
