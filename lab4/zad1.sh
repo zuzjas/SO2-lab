@@ -24,4 +24,4 @@
 # ścieżkę względną do tego pliku, nic ponadto.
 #
 
-find -name mutex.c
+find linux-5.11.13/ -name mutex.c
