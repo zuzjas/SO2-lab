@@ -24,4 +24,4 @@
 # względne do takich plików (dowiązań, a nie do wskazywanych przez nie celów!).
 #
 
-find -type l
+find linux-5.11.13/ -type l
