@@ -24,4 +24,5 @@
 # Każdą nazwę użytkownika wypisać w nowej linii.
 #
 
-awk '{split($0,tab,":")};tab[3] >= 1000 && tab[7] == "/bin/bash" {print tab[1]}' dodatkowe/etc-passwd
+awk '{split($0,tab,":")};
+    tab[3] >= 1000 && tab[7] == "/bin/bash" {print tab[1]}' dodatkowe/etc-passwd
